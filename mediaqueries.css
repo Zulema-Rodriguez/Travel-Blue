@@ -1,0 +1,157 @@
+/* Tablet */
+
+@media(max-width:992px) {
+    /* navbar */
+    .navbar {
+        gap: 10px;
+    }
+
+    .cart-icon {
+        height: 33px;
+        margin-right: 0rem;
+        margin-top: 4px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 98%;
+        flex-direction: column;
+        background-color: black;
+        border: 2px solid(rgb(199, 199, 228));
+        border-top: 0px;
+        border-radius: 0 0 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navar-link {
+        text-decoration: none;
+        font-weight: 300;
+    
+    }
+
+    .navbar-list a {
+        font-size: 20px;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .menu-label img {
+        height: 20px;
+        width: 27px;
+    }
+
+    #menu-toggle:checkend + .navbar-list {
+        display: flex;
+    }
+
+    /* main */
+
+
+
+    .formulario-contacto {
+        display: none;
+    }
+
+    .portada-blue {
+        width: 80vw;
+        max-width: 1000px;
+        min-width:320px ;
+        margin: auto;
+    }
+
+    .img-portada {
+        width: 100%;
+        border-radius: 15px;
+        
+    }
+
+    .datos {
+        display: none;
+    }
+
+    /* metodos de pago */
+    .pagos{
+        display: none;
+    }
+
+    /* destinos y hoteles */
+    .info-cards-container {
+        flex-direction: column;
+        margin: 9px;
+    }
+
+    .info-card {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    /* beneficios */
+    .contenedor-beneficios {
+        flex-direction: column;
+        width: 80wh;
+        max-width: 1000px;
+        min-width: 320px;
+        height: 100%;
+        justify-content: center;
+        
+        
+    }
+
+    .beneficios-varios {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* ofertas */
+    .contenedor-ofertas {
+        display: none;
+
+    }
+
+    /* opiniones */
+    .opiniones-contenedor-card {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nosotros-cards {
+        display: none;
+    }
+
+ 
+
+
+}
+
+@media (max-width: 576) {
+    /* media */
+    .img-portada {
+        width: 500px;
+        height: 500px;
+    }
+
+    /* beneficios */
+    .contenedor-beneficios {
+        margin: 1px;
+
+    }
+
+
+
+
+}
+
+

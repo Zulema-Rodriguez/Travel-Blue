@@ -1,0 +1,631 @@
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: initial;
+    
+    
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 5px 0px 5px;
+    position: fixed;
+    
+
+
+}
+
+.logo {
+    height: 90%;
+}
+
+.navbar-list, 
+.navbar {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.navbar-list {
+    gap: 30px;
+    display: flex;
+}
+
+.navbar-list a {
+    color:white;
+}
+
+.navbar-list li a:hover {
+    color: lightskyblue;
+    transition: all .3s;
+}
+
+.navbar-list > li {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-list > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 1px 5px;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 90px;
+    padding: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    color: white;
+    margin: 30px auto;
+}
+
+.navbar i {
+    font-size: 36px;
+    display: none;
+    color: white;
+    
+
+
+}
+
+#toggle-menu {
+    display: none;
+    
+
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 30px;
+    margin-right: 0px;
+    cursor: pointer;
+    
+
+}
+
+@media (max-width: 576px) {
+    .navbar ul {
+        background: black;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 65px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        line-height: 1.2px;
+    }
+
+    .navbar i {
+        display: block;
+        font-size: 30px;
+    
+    }
+
+    #toggle-menu:checked + .navbar-list {
+        display: flex;
+    }
+
+    .navbar-list {
+        display: flex;
+        
+        
+    }
+
+    
+}
+
+/* Submenu */
+.submenu {
+    position: absolute;
+    background: black;
+    width: 195%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    flex-direction: column;
+    margin: 0px 5px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.navbar-list li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Portada */
+.portada-blue {
+    display: flex;
+    width: 1305px;
+    height: 350px;
+    flex: 300%;
+    box-shadow: 0 1px 5px;
+    padding: 80px 20px;
+    margin: px;
+    background-color: rgb(109, 223, 238);
+}
+
+.formulario-contacto {
+    padding: 10px 20px;
+    margin: 5px 1px;
+    font-size: 1.2rem;
+    color: rgb(9, 9, 71);
+    background-color: lightskyblue;
+    width: 50%;
+    height: 30px 30px;
+    
+    
+}
+
+.destino {
+    background-color:lightskyblue;
+    margin: 0px ;
+    font-size:1.2 rem;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    
+    
+}
+
+.titulo-formulario {
+    justify-content: center;
+    text-align: center;
+    color: blue;
+    
+}
+
+.img-portada {
+    width: 700px;
+    height: 250px;
+}
+
+.datos {
+    color: black;
+    display: inline-table;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    margin: 50px 10px;
+    justify-content: center;
+    
+    
+}
+
+.datos h3 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.datos p {
+    font-size: 1rem;
+
+}
+
+.datos > p > i {
+    color: rgb(37, 48, 202);
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.nuestros-datos {
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+/* Metodos de pagos */
+.pagos-imagenes {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+}
+
+
+.pagos-imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.img-pago {
+    width: 200px;
+    height: 150px;
+    margin-right: 25px;
+}
+
+
+/* Destinos-hoteles */
+.info-cards-container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 90px;
+}
+
+.info-card {
+    width: 100%;
+    margin: 1em;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.info-card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3%);
+}
+
+.img-destino,
+.img-hoteles {
+    width: 260px;
+    height: 230px;
+}
+
+.info-cards-container {
+    display: flex;
+}
+
+.contenido-cards {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenido-cards h4{
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.button-cards {
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 6px;
+    color:blue;
+    border: 1px solid #0d45ad;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.button-cards:hover {
+    background: #0d45ad;
+    color: white;
+}
+
+
+
+/* Beneficios */
+.contenedor-beneficios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    max-width: 1300px;
+    margin: 2px;
+    margin-top: 0px;
+}
+
+.beneficios-varios {
+    margin: 10px;
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.58);
+}
+
+.img-beneficios {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+}
+
+.beneficios-varios:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.beneficios-varios:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.beneficios-varios:hover > .img-beneficios {
+    transform: scale(1.3);
+}
+
+.capa h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 12px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.capa p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* Ofertas */
+.contenedor-ofertas {
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex: 300%;
+    margin: 10px 370px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.img-ofertas {
+    width: 340px;
+    height: 330px;
+}
+
+.card-texto {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    padding: 60px 20px;
+    font-size: 1rem;
+}
+
+
+/* Opiniones */
+.img-opiniones {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.opiniones-contenedor-card {
+    display: flex;
+    width: 100%;
+    max-width: 1100%;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.info-opiniones {
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgb(247, 248, 248);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.info-opiniones:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translate(2%);
+}
+
+.opiniones {
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-opiniones h3 {
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-card-opiniones p {
+    font-size: 1 rem;
+    margin: 0;
+    padding: 0 1rem;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 300px;
+}
+
+.contenido-card-opiniones p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 1rem;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Nosotros */
+.nosotros-cards {
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    flex: 300%;
+    margin: 10px  180px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px;
+    padding: 10px 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.familia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.img-familia {
+    width: 500px;
+    height: 330px;
+}
+
+.nosotros-texto {
+    height: 220px;
+    margin: 3rem auto;
+    text-align: center;
+    width: 800px;
+    position: relative;
+    display: flex;
+}
+
+.texto-travel {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 100px 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+/* footer */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: black;
+    padding: 80px 0;
+}
+
+.footer-travel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #3cb7c7;
+    font-weight: 500;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: blue;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: black(255, 255, 255, 02);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+
+.social-link a:hover {
+    background-color: blue;
+}
+
+@media(max-width:991px) {
+    .footer-row {
+        text-align: center;
+         
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
